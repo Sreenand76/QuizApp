@@ -45,7 +45,7 @@ const Home = () => {
               description: "Understand the pillars of OOP with engaging examples.",
               image:
                 "/images/oops.jpeg",
-              url: "https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/",
+              url: "https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/",
             },
             {
               title: "Data Structures & Algorithms",
