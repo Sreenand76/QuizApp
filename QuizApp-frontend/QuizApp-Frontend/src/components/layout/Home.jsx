@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero Section */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-purple-700 via-indigo-600 to-purple-500 text-white ">
+      <header className="relative overflow-hidden bg-gradient-to-br from-purple-700 via-indigo-600 to-purple-500 text-white lg:min-h-[80vh]">
         <div className="container mx-auto px-6 py-16 text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mt-10">
             Unlock Your Knowledge Potential
