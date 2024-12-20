@@ -48,7 +48,7 @@ This project is a fully functional **Quiz Application** designed to offer an int
 - Ensure backend APIs are properly deployed and accessible to the frontend.
 
 Once resolved, you can provide the live demo link here:  
-[Live Demo](#)
+[Live Demo](#https://quizmo75.vercel.app/)
 
 ---
 
@@ -57,4 +57,6 @@ Once resolved, you can provide the live demo link here:
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/sreenand76/QuizApp.git
-cd quiz-application
+cd QuizApp
+
+
