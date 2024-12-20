@@ -48,7 +48,7 @@ This project is a fully functional **Quiz Application** designed to offer an int
 - Ensure backend APIs are properly deployed and accessible to the frontend.
 
 Once resolved, you can provide the live demo link here:  
-[Live Demo](#https://quizmo75.vercel.app/)
+[Live Demo](https://quizmo75.vercel.app/)
 
 ---
 
