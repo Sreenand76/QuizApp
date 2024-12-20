@@ -54,17 +54,20 @@ Once resolved, you can provide the live demo link here:
 
 ## **📂 Project Setup**
 
-# 1. Clone the Repository
+### **1. Clone the Repository**
+---bash
 git clone https://github.com/sreenand76/QuizApp.git
 cd QuizApp
 
-# 2. Setup the Frontend
+### **2. Setup the Frontend**
+---bash
 cd QuizApp-frontend
 npm install
 npm run dev
 
-# 3. Setup the Backend
-cd ../QuizApp-backend
+### **3. Setup the Backend**
+--bash
+cd QuizApp-backend
 mvn clean install
 mvn spring-boot:run
 
