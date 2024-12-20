@@ -67,7 +67,7 @@ npm run dev
 ```
 ### **3. Setup the Backend**
 ```bash
-cd QuizApp-backend
+cd QuizApp-Backend
 mvn clean install
 mvn spring-boot:run
 ```
