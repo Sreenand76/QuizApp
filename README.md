@@ -56,5 +56,5 @@ Once resolved, you can provide the live demo link here:
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/quiz-application.git
+git clone https://github.com/sreenand76/QuizApp.git
 cd quiz-application
