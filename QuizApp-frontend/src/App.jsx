@@ -4,7 +4,6 @@ import Profile from "./components/Auth/Profile";
 import Registration from "./components/Auth/Registration";
 import Login from "./components/Auth/Login";
 import { AuthProvider } from "./components/Auth/AuthProvider";
-import GetAllQuestion from "./components/quiz/GetAllQuestion";
 import QuizStepper from "./components/quiz/QuizStepper";
 import Quiz from "./components/quiz/Quiz";
 import QuizResult from "./components/quiz/QuizResult";
@@ -15,9 +14,9 @@ import LogOut from "./components/Auth/LogOut";
 import RequireAuth from "./components/Auth/RequireAuth";
 import Admin from "./components/admin/Admin";
 import ManageUsers from "./components/admin/ManageUsers";
-import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import QuizReview from "./components/quiz/QuizReview";
+import GetAllQuestion from "./components/question/GetAllQuestion";
 
 function App() {
   return (

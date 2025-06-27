@@ -1,74 +1,120 @@
-# **Quizmo -Full Stack Quiz Application**
+# Quizmo – Full Stack Quiz Application
 
-This project is a fully functional **Quiz Application** designed to offer an interactive and engaging platform for users to take quizzes while administrators manage quiz creation and updates. It includes features like quiz categorization, score tracking, and timer-based challenges for an enhanced user experience.
-
----
-
-## **🛠️ Technologies Used**
-
-### **Frontend**:
-- **React.js**: JavaScript library for building user interfaces.
-- **Tailwind CSS**: Utility-first CSS framework for styling and responsiveness.
-
-### **Backend**:
-- **Spring Boot**: Framework for creating Java-based web applications and RESTful APIs.
-- **PostgreSQL**: Relational database for storing quiz data, user progress, and scores.
-
-### **Containerization**:
-- **Docker**: Ensures seamless and consistent deployment across all environments.
-
-### **Authentication & Security**:
-- **JWT (JSON Web Tokens)**: Provides secure authentication and role-based access control for APIs.
+**Quizmo** is a modern, full-stack quiz platform that enables engaging quiz experiences for users and streamlined administration for quiz creators. Built with React, Spring Boot, and PostgreSQL, Quizmo demonstrates secure, scalable, and containerized application architecture.
 
 ---
 
-## **🎯 Key Features**
+## 🚀 Live Demo
 
-- **Dynamic and Responsive Frontend**: Designed with React.js and Tailwind CSS to ensure a smooth and accessible user experience across devices.
-- **Admin Privileges**: Only administrators can create, update, and manage quizzes, questions, and categories.
-- **User Interactivity**: Regular users can take quizzes, track scores, and participate in timer-based challenges.
-- **Quiz Categorization**: Quizzes are categorized for better organization and accessibility.
-- **Dockerized Deployment**: Containerized application using Docker to streamline deployment and maintain consistency across environments.
-
----
-
-## **🔮 Future Scope**
-
-- Add user analytics to track quiz performance and trends.
-- Integrate social media sharing options for quiz results.
-- Enable quiz exports in formats like PDF or Excel.
-
----
-
-## **🚀 Live Demo**
-
-⚠️ The live demo link is currently unavailable. If deployment issues arise, consider checking:
-- **Frontend build logs** for errors during deployment.
-- **Docker container status** to verify successful builds and configurations.
-- Ensure backend APIs are properly deployed and accessible to the frontend.
-
-Once resolved, you can provide the live demo link here:  
 [Live Demo](https://quizmo75.vercel.app/)
 
 ---
 
-## **📂 Project Setup**
+## 🚀 Executive Summary
 
-### **1. Clone the Repository**
+Quizmo empowers both administrators and users—admins can create and manage quizzes, while users can participate in a variety of categorized quizzes, track their progress, and challenge themselves with timers. 
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Spring Boot (Java), RESTful APIs
+- **Database:** MySQL
+- **Authentication:** JWT-based, role-based access
+- **Deployment:** Frontend (Vercel) ,Backend (Render using docker image)
+
+---
+
+## 🎯 Key Features
+
+- **Role-based Access:** Secure admin and user separation with JWT
+- **Fully Responsive UI:** Accessible on all devices
+- **Quiz Categorization:** Organized, easy-to-navigate quizzes
+- **Score Tracking:** Real-time progress and history
+- **Timer Challenges:** Adds excitement and difficulty
+- **Admin Dashboard:** Manage quizzes, questions, and categories
+
+---
+
+## 🗺️ Architecture Overview
+
+![Quizmo Architecture](screenshots/quizmo-architecture.png)
+
+**Architecture Explanation:**
+
+- **User (Browser):** Accesses the application through a modern web browser.
+- **Frontend (React.js + Tailwind CSS):**  
+  - Served as a static site ( via Vercel ).  
+  - Communicates with the backend API using HTTPS and includes JWT in requests.
+- **Backend API (Spring Boot):**  
+  - Exposes RESTful endpoints for quiz management, user authentication, scoring, etc.  
+  - Handles role-based access control (admin/user) using JWT tokens.
+- **Database (MySQL):**  
+  - Stores users, quizzes, questions, scores, categories, and more.
+- **Authentication (JWT):**  
+  - On login, backend issues JWT, which the frontend stores and attaches to API requests.
+---
+
+## 🖼️ Screenshots
+
+![Quiz Section](QuizApp-frontend/screenshots/quiz-home.png)
+![Admin Panel](QuizApp-frontend/screenshots/quizmo-admin.png)
+
+---
+
+## 💡 Key Learnings & Challenges
+
+- Implemented secure JWT authentication and role-based permissions.
+- Designed RESTful APIs and ensured seamless frontend-backend integration.
+- Learned about entity-relationship mapping.
+- Solved CORS, environment variable management.
+
+---
+
+## 📂 Project Setup
+
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/sreenand76/QuizApp.git
 cd QuizApp 
 ```
-### **2. Setup the Frontend**
+### 2. Setup the Frontend
 ```bash
 cd QuizApp-frontend
 npm install
 npm run dev
 ```
-### **3. Setup the Backend**
+### 3. Setup the Backend
 ```bash
 cd QuizApp-Backend
 mvn clean install
 mvn spring-boot:run
 ```
+---
+
+### Sample Credentials
+
+- **Admin:** admin@example.com / admin123
+- **User:** user@example.com / user123
+
+---
+
+## 🔮 Future Scope
+
+- Integrate social media sharing for quiz results.
+- Enable quiz export in PDF/Excel formats.
+- Add support for image and multimedia questions.
+
+---
+
+## 🤝 Contribution / Contact
+
+Feedback and collaboration are welcome!  
+Connect with me on [LinkedIn](https://www.linkedin.com/in/sreenand-s-9b2716292/) or email at sreenands93@gmail.com.
+
+---
+
+
+
 
