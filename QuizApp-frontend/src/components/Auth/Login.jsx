@@ -6,7 +6,8 @@ import { toast } from 'react-toastify';
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isRegularLoginLoading, setIsRegularLoginLoading] = useState(false);
+  const [isGuestLoginLoading, setIsGuestLoginLoading] = useState(false);
   const [login, setLogin] = useState({
     email: "",
     password: "",
@@ -20,7 +21,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
+    setIsRegularLoginLoading(true);
     setErrorMessage("");
 
     try {
@@ -37,21 +38,13 @@ const Login = () => {
       setErrorMessage("An error occurred during login. Please try again.");
       console.error("Login error:", error);
     } finally {
-      setIsLoading(false);
+      setIsRegularLoginLoading(false);
     }
   };
 
-  // Function to handle guest login
   const handleGuestLogin = async (e) => {
     e.preventDefault();
-    setLogin({
-      email: "dummy123@gmail.com",
-      password: "dummy_9037"
-    });
-    
-    // Auto-submit after setting values (optional)
-    // You can remove this if you want user to click login button
-    setIsLoading(true);
+    setIsGuestLoginLoading(true);
     setErrorMessage("");
 
     try {
@@ -71,7 +64,7 @@ const Login = () => {
       setErrorMessage("An error occurred during guest login. Please try again.");
       console.error("Guest login error:", error);
     } finally {
-      setIsLoading(false);
+      setIsGuestLoginLoading(false);
     }
   };
 
@@ -128,9 +121,9 @@ const Login = () => {
           <button
             type="submit"
             className="w-full bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-200 mt-3 flex justify-center items-center"
-            disabled={isLoading}
+            disabled={isRegularLoginLoading || isGuestLoginLoading}
           >
-            {isLoading ? (
+            {isRegularLoginLoading ? (
               <>
                 <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -143,13 +136,12 @@ const Login = () => {
             )}
           </button>
 
-          {/* Guest Login Button */}
           <button
             onClick={handleGuestLogin}
             className="w-full bg-gray-600 text-white py-3 rounded-lg shadow-md hover:bg-gray-700 transition duration-200 mt-3 flex justify-center items-center"
-            disabled={isLoading}
+            disabled={isRegularLoginLoading || isGuestLoginLoading}
           >
-            {isLoading ? (
+            {isGuestLoginLoading ? (
               <>
                 <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
