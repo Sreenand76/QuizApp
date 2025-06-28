@@ -39,13 +39,16 @@ Quizmo empowers both administrators and users—admins can create and manage qui
 
 ## 🗺️ Architecture Overview
 
-![Quizmo Architecture](QuizApp-frontend/screenshots/quizmo-architecture.png)
+<div align="center">
+  <img src="QuizApp-frontend/screenshots/quizmo-architecture.png" alt="Quizmo Architecture" style="width: 100%; max-width: 900px; min-width: 320px;">
+</div>
 
-**Architecture Explanation:**
+<details>
+<summary><strong>Architecture Explanation</strong> (click to expand)</summary>
 
 - **User (Browser):** Accesses the application through a modern web browser.
 - **Frontend (React.js + Tailwind CSS):**  
-  - Served as a static site ( via Vercel ).  
+  - Served as a static site (via Vercel).  
   - Communicates with the backend API using HTTPS and includes JWT in requests.
 - **Backend API (Spring Boot):**  
   - Exposes RESTful endpoints for quiz management, user authentication, scoring, etc.  
@@ -54,7 +57,8 @@ Quizmo empowers both administrators and users—admins can create and manage qui
   - Stores users, quizzes, questions, scores, categories, and more.
 - **Authentication (JWT):**  
   - On login, backend issues JWT, which the frontend stores and attaches to API requests.
----
+
+</details>
 
 ---
 
