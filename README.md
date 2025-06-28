@@ -1,6 +1,6 @@
 # Quizmo – Full Stack Quiz Application
 
-**Quizmo** is a modern, full-stack quiz platform that enables engaging quiz experiences for users and streamlined administration for quiz creators. Built with React, Spring Boot, and PostgreSQL, Quizmo demonstrates secure, scalable, and containerized application architecture.
+**Quizmo** is a modern, full-stack quiz platform that enables engaging quiz experiences for users and streamlined administration for quiz creators. Built with React, Spring Boot, and MySQL, Quizmo demonstrates secure, scalable, and containerized application architecture.
 
 ---
 
@@ -56,10 +56,13 @@ Quizmo empowers both administrators and users—admins can create and manage qui
   - On login, backend issues JWT, which the frontend stores and attaches to API requests.
 ---
 
+---
+
 ## 🖼️ Screenshots
 
-![Quiz Section](QuizApp-frontend/screenshots/quiz-home.png)
-![Admin Panel](QuizApp-frontend/screenshots/quizmo-admin.png)
+| Quiz Section                              | Admin Panel                              |
+|----------------------------------------|----------------------------------------|
+| ![Quiz Section](QuizApp-frontend/screenshots/quiz-home.png) | ![Admin Panel](QuizApp-frontend/screenshots/quizmo-admin.png) |
 
 ---
 
