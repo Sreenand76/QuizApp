@@ -40,7 +40,7 @@ Quizmo empowers both administrators and users—admins can create and manage qui
 ## 🗺️ Architecture Overview
 
 <div align="center">
-  <img src="QuizApp-frontend/screenshots/quizmo-architecture.png" alt="Quizmo Architecture" style="width: 100%; max-width: 900px; min-width: 320px;">
+  <img src="QuizApp-frontend/screenshots/quizmo-architecture1.png" alt="Quizmo Architecture" style="width: 100%; max-width: 900px; min-width: 320px;">
 </div>
 
 <details>
