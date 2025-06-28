@@ -39,7 +39,7 @@ Quizmo empowers both administrators and users—admins can create and manage qui
 
 ## 🗺️ Architecture Overview
 
-![Quizmo Architecture](screenshots/quizmo-architecture.png)
+![Quizmo Architecture](QuizApp-frontend/screenshots/quizmo-architecture.png)
 
 **Architecture Explanation:**
 
@@ -62,7 +62,7 @@ Quizmo empowers both administrators and users—admins can create and manage qui
 
 | Quiz Section                              | Admin Panel                              |
 |----------------------------------------|----------------------------------------|
-| ![Quiz Section](QuizApp-frontend/screenshots/quiz-home.png) | ![Admin Panel](QuizApp-frontend/screenshots/quizmo-admin.png) |
+| ![Quiz Section](QuizApp-frontend/screenshots/quizmo-home.png) | ![Admin Panel](QuizApp-frontend/screenshots/quizmo-admin.png) |
 
 ---
 
