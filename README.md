@@ -84,7 +84,6 @@ Quizmo empowers both administrators and users—admins can create and manage qui
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/sreenand76/QuizApp.git
-cd QuizApp 
 ```
 ### 2. Setup the Frontend
 ```bash
