@@ -17,14 +17,14 @@ import ManageUsers from "./components/admin/ManageUsers";
 import Navbar from "./components/layout/Navbar";
 import QuizReview from "./components/quiz/QuizReview";
 import GetAllQuestion from "./components/question/GetAllQuestion";
+import ColdStartToast from "./coldstartToast";
 
 function App() {
   return (
     <ErrorBoundary>
     <AuthProvider>
       <BrowserRouter>
-        
-
+      <ColdStartToast/>
           <main className="m-auto bg-gray-200 min-h-[100vh]">
             <Navbar/>
             <Routes>
