@@ -9,7 +9,7 @@ const ColdStartToast = () => {
     toast.info(
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <span className="loader" style={{ marginRight: '10px' }}></span>
-        Waking up backend... (Render free tier)
+        Waking up server... may take up to 1–2 mins (Render free tier)
       </div>,
       {
         toastId,
